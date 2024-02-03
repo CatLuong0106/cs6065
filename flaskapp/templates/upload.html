@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+</head>
+<body>
+    <h1>Upload a Text File</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        {{ form.upload.label }} {{ form.upload }}
+        {{ form.submit }}
+    </form>
+    <p><a href="{{ url_for('dashboard', username=user.username) }}">Go to Dashboard</a></p>
+</body>
+</html>

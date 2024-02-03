@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <ul>
+        <li><a href="{{url_for('logout')}}">Log Out</a></li>
+        <li><a href="{{url_for('display', username=user.username)}}">Your Information</a></li>
+        <li><a href="{{url_for('upload', username=user.username)}}">Upload a File</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,9 @@
+name: cloud_hw
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9  # specify your preferred Python version
+  - pip
+  - pip:
+      - -r requirements.txt
