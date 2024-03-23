@@ -1,0 +1,12 @@
+# Ignore database.db files
+**/database.db
+
+# Ignore credentials.json files
+**/credentials.json
+
+# Ignore .vscode directories
+.vscode/
+
+# Ignore all CSV files
+**/*.csv
+
